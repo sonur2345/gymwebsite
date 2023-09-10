@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+   
+    font-family: 'Poppins', sans-serif;
+   
+}
+#main{
+   padding-top: 72px;
+}
+.navbar {
+   
+    background-color: black;
+    border-bottom: 1px solid #7F5000;  
+  
+    padding-bottom: 23px;
+}
+
+.navbar li a{
+    color: white;
+    outline-color: white;
+
+}
+.navbar li a:hover{
+    color: white;
+    
+    border-bottom: 2px solid  rgb(239, 234, 234);
+}
+.btn2 {
+    position: absolute;
+    top: 4px;
+    left: 40px;
+    height: 45px;
+    width: 45px;
+    background: white;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: left 0.4s ease;
+}
+
+.btn.click {
+    left: 260px;
+}
+
+.btn>span {
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+.btn.click span:before {
+    content: '\f00d';
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    background: white;
+    border-right: 1px solid black;
+    transition: left 0.4s ease;
+}
+
+.sidebar.show {
+    top: 0;
+    left: 0px;
+    z-index: 1034;
+
+}
+
+.sidebar .text {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: white;
+    letter-spacing: 1px;
+}
+
+.leftul {
+    background: white;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    max-height: 100vh;
+
+
+}
+
+.leftli {
+    line-height: 60px;
+    border-bottom: 1px solid white;
+}
+
+.link {
+    color: black;
+    position: relative;
+    columns: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+
+}
+
+.link:hover {
+    color: white;
+    background: #1627de;
+    border-left:3px solid red;
+}
+
+nav ul ul {
+    position: static;
+    display: none;
+}
+
+nav ul ul li {
+    line-height: 42px;
+    border-bottom: none;
+}
+
+/* dashboard background image  */
+.bg-img {
+    background-image: url("../image/gy3.jpg");
+    height: 85vh;   
+}
+
+/* roll background image  */
+.role_img { 
+     background-image: url("../image/gym8.png"); 
+    top: 40px;
+    height: 380px;
+    background-color: #050506;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: 439px 85px ;  
+}
+
+
+#role_h2{
+    padding: 83px 61px; 
+    color: #ffffff;
+}
+
+#role_btn{
+    padding: 0px 60px;
+}
+#role_manage_btn{
+float: left;
+border-radius: 19px;
+right: 0px;
+}
+
+/* role table border */
+#Role_table {
+    border: 1px solid black;
+  
+  width: 100%;
+}
+
+#submit-btn{
+    height: 35px;
+    width: 200px;
+    border: 1px solid silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #188AE2;
+    color: white;
+    font-size: 15px;
+}
+.card2 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 250px;
+    top: -50px;
+  
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .card2 {
+        width: 100%;
+    }
+}
+.typewrite1{
+    text-decoration: none;
+    color: yellow;
+}
+.typewrite2{
+    text-decoration: none;
+    color: white;
+}
+#start_date{
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    height: 32px;
+    font-weight: 100;
+    border-color: white;
+    width: 152px;
+    border-radius: 19px;
+    left:60px;
+    float: left;
+    margin-left: 10px;
+    background: rgba(13, 71, 161, 0);
+}
+#end_date{
+    color: white;
+    height: 32px;
+    font-weight: 100;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    width: 152px;
+    border-radius: 19px;
+    left:60px;
+    float: left;
+    margin-left: 10px;
+    background: rgba(13, 71, 161, 0);
+}
+#calbtn{
+    width: 42px;
+    border-radius: 19px;
+    left:60px;
+    float: left;
+    margin-left: 10px;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    height: 32px;
+    font-weight: 100;
+    background: rgba(13, 71, 161, 0);
+}

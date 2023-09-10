@@ -1,0 +1,153 @@
+#txt_Packagename {
+    text-transform: uppercase;
+    width: 100%;
+    color: #5f5959;
+    padding-left: 5px;
+    font-weight: 100;
+    padding-top: 3px;
+}
+
+#select_tenure {
+    border-top: 0px;
+    height: 32px;
+    width: 100%;
+    border-left: 0px;
+    border-right: 0px;
+
+}
+
+#text_tenure {
+    text-transform: uppercase;
+    color: #5f5959;
+    padding-left: 5px;
+    font-weight: 100;
+}
+
+#text_tenureamount {
+    text-transform: uppercase;
+    color: #5f5959;
+    padding-left: 5px;
+    font-weight: 100;
+}
+
+#text_tenureduration {
+    text-transform: uppercase;
+    color: #5f5959;
+    padding-left: 5px;
+    font-weight: 100;
+}
+
+#addplan {
+    background: #388e3c;
+    color: #fff;
+    border: none;
+}
+
+#text_complimentry {
+    text-transform: uppercase;
+    color: #5f5959;
+    padding-left: 5px;
+    font-weight: 100;
+}
+
+#text_complimentryduration {
+    text-transform: uppercase;
+    color: #5f5959;
+    padding-left: 5px;
+    font-weight: 100;
+}
+
+#addcomp {
+    background: #388e3c;
+    color: #fff;
+    border: none;
+}
+
+#text_planprice {
+    text-align: center;
+    color: #5f5959;
+    padding-left: 5px;
+    font-weight: 100;
+}
+
+#tenurefieldset {
+    display: block;
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    -webkit-padding-before: 0.35em;
+    -webkit-padding-start: 0.75em;
+    -webkit-padding-after: 0625eml;
+    min-width: -webkit-min-content;
+    border: 1px solid #e8dede;
+    border-style: groove;
+    border-image: initial;
+}
+
+
+/* Enquiry form css */
+#add-modal{
+    padding: 20px 24px 24px;
+}
+
+#text_Enquiryform {
+    margin-top: 4px;
+}
+
+#description_enquriyform {
+    height: 58px;
+}
+
+#enqyriyfollowup {
+    border: 1px solid red;
+    padding: 10px;
+}
+#enquiry_lableNext{
+    color: red;
+    margin-bottom: 13px;
+}
+#enquiry_followdays{
+    color: black;
+}
+#enquiry_followdate{
+    color: black;
+}
+
+/* div trial  */
+
+#enquiry_div_trial{
+    width: 100%;
+    display: none;
+    border: 1px solid red;
+    padding: 15px;
+}
+#text_trialservices{
+  width: 100%;
+}
+#trial_startdate{
+    width: 100%;
+}
+#trial_enddate{
+    width: 100%;
+}
+
+/* Add expenses form  */
+
+#addexpenses_date{
+    color: black;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+#spn_addexpensecategory{
+    font-weight: 100;
+    text-transform: capitalize;
+    /* color:#f9870d; */
+}
+#addexpenses_selecttype{
+    width:300px;
+    border-radius: 5px;
+    font-family: initial;
+}
+.select2-container{
+    width: 100% !important;
+}
+
