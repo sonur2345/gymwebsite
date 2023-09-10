@@ -32,7 +32,7 @@ class AddPlanController extends Controller
     //    $addplan->tenure_amount = $request->text_tenureamount;
     //    $addplan->tenure_duration = $request->tenureduration;
        $addplan->plan_price = $request->text_planprice;
-       $addplan->fk_tenure_id =$addplan->id;
+       $addplan->fk_tenure_id;
 
        
     //    DB::commit();
