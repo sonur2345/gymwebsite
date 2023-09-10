@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('comp_name');
             $table->integer('comp_duration');
             $table->bigInteger('plan_price');
-            $table->unsignedBigInteger('fk_tenure_id')->nullable();
-            $table->foreign('fk_tenure_id')->references('id')->on('add_plan_tenure');
+            $table->unsignedBigInteger('fk_tenure_id')->constraint();
+            $table->foreign('fk_tenure_id')->references('id')->on('add_plantenures');
             $table->timestamps();
         });
     }

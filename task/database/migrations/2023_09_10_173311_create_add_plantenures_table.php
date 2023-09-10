@@ -11,13 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('add_plan_tenure', function (Blueprint $table) {
-            $table->id()->unique();
+        Schema::create('add_plantenures', function (Blueprint $table) {
+            $table->id('id');
             $table->string('tenure_name',255);
             $table->string('tenure_Surfix');
             $table->bigInteger('tenure_amount')->nullable();
             $table->integer('tenure_duration');
             $table->timestamps();
+            
         });
     }
 
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('add_plan_tenure');
+        Schema::dropIfExists('add_plantenures');
     }
 };
