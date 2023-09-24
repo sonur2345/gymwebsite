@@ -57,6 +57,8 @@ Route::middleware(['dashboard'])->group(function() {
     //Members management 
     Route::get('/Members', [MembersController::class, 'Members_manage'])->name('Members_Manage');
     Route::post('/Members/save', [MembersController::class, 'Members_save']);
+    Route::post('/Members/{id}/edit', [MembersController::class, 'Members_edit']);
+    Route::get('/Members/{id}/delete', [MembersController::class, 'Members_delete']);
 
     //Pakage management 
     Route::get('/Package', [PakageController::class, 'Package_manage'])->name('Pakage_Manage');

@@ -26,7 +26,7 @@ class DashboardController extends Controller
     }
   
      public function Role_edit(Request $request,$id){
-        $Role = Role::where('id',$id)->first();
+    $Role = Role::where('id',$id)->first();
     $Role->Role_name = $request->role_name;
     $Role->Role_type = $request->select_role;
     $Role->Is_sale_incentive = $request->Is_sale_incentive;

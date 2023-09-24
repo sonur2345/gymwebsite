@@ -27,23 +27,23 @@
       </tr>
     </thead>
     <tbody>
-    @foreach($members as $Members)
+    @foreach($Members as $members)
       <tr>
-        <td>{{ $Members->id }}</td>
-        <td>{{ $Members->mem_Name }}</td>
-        <td>{{$Members->pakage_name}}+{{ $Members->services}} + {{$Members->comp_name}}</td>
-        <td>{{ $Members->mem_number }}</td>
-        <td>{{ $Members->mem_email }}</td>
-        <td>{{ $Members->mem_date_join }}</td>
-        <td>{{ $Members->st_check_in }}</td>
-        <td>{{ $Members->st_check_out }}</td>
+        <td>{{ $members->id }}</td>
+        <td>{{ $members->mem_Name }}</td>
+        <td>{{$members->pakage_name}}</td>
+        <td>{{ $members->mem_number }}</td>
+        <td>{{ $members->mem_email }}</td>
+        <td>{{ $members->mem_date_join }}</td>
+        <td>{{ $members->st_check_in }}</td>
+        <td>{{ $members->st_check_out }}</td>
         <td>
-          <a href="#" class="btn btn-dark" data-bs-toggle="modal"> EDIT </a>
-          <a href="" class="btn btn-dark"> DELETE </a>
+          <a href="#medit{{$members->id}}" class="btn btn-dark" data-bs-toggle="modal"> EDIT </a>
+          <a href="/Members/{{$members->id}}/delete" class="btn btn-dark"> DELETE </a>
         </td>
+        @include('Dashboard.Members.EditMemberForm')
       </tr>
       @endforeach
-      
     </tbody>
   </table>
 
