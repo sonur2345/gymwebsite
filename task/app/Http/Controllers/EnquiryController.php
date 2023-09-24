@@ -30,7 +30,7 @@ class EnquiryController extends Controller
             $trial->start_date = $request->trial_startdate;
             $trial->end_date = $request->trial_enddate;
             $trial->save();
-            return redirect('/home');
+            return redirect('/Trial');
         }
         if ($request->action == 'save') {
 

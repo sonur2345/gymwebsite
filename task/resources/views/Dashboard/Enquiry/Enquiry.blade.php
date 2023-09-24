@@ -14,7 +14,7 @@
 
 <div class="container">
   
-<table class="table text-center mt-4" id="trial_table">
+<table class="table table-bordered text-center mt-4">
     <thead>
       <tr>
         <th>id</th>

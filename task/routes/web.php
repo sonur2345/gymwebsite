@@ -6,6 +6,7 @@ use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\AddPlanController;
 use App\Http\Controllers\PakageController;
 use App\Http\Controllers\EnquiryController;
+use App\Http\Controllers\MembersController;
 use App\Http\Middleware\dashboard;
 
 /*
@@ -54,7 +55,8 @@ Route::middleware(['dashboard'])->group(function() {
 
     
     //Members management 
-    Route::get('/Members', [DashboardController::class, 'Members_manage'])->name('Members_Manage');
+    Route::get('/Members', [MembersController::class, 'Members_manage'])->name('Members_Manage');
+    Route::post('/Members/save', [MembersController::class, 'Members_save']);
 
     //Pakage management 
     Route::get('/Package', [PakageController::class, 'Package_manage'])->name('Pakage_Manage');

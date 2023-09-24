@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Role;
 use App\Models\Employee;
 use App\Models\Trial;
+use App\Models\AddPlan;
 
 class DashboardController extends Controller
 {
@@ -39,15 +40,6 @@ class DashboardController extends Controller
     return redirect('/Role');
      }
 
-   
-
-    //    Members_manage
-    public function Members_manage()
-    {
-        return view('Dashboard.Members.Members');
-    }
-
-    
 
     //    Report_manage
     public function Report_manage()

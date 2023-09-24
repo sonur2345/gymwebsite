@@ -12,7 +12,7 @@
 </div>
 
 <div class="container">
-  <table class="table table-bordered text-center mt-4" id="Emp_table">
+  <table class="table table-bordered text-center mt-4">
     <thead>
       <tr class="table-primary">
         <th scope="col">id</th>

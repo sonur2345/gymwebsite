@@ -13,9 +13,9 @@
 </div>
 
 <div class="container">
-  <table class="table text-center mt-4" id="Role_table">
+  <table class="table table-bordered text-center mt-4">
     <thead>
-      <tr>
+      <tr class="table-primary">
         <th scope="col">id</th>
         <th scope="col">Pakage Name</th>
         <th scope="col">Services</th>

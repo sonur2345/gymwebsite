@@ -109,7 +109,7 @@
                 <li class="leftli"> <a href="/home" class="link"><i class="bi bi-house p-2"></i>Home</a></li>
                 <li class="leftli"><a href="/Employee" class="link"><i class="bi bi-heart-fill p-2"></i>Employee</a> </li>
                 <li class="leftli"><a href="/Package" class="link"><i class="bi bi-journal-text p-2"></i>Plan Package</a> </li>
-                <li class="leftli"><a href="/Member" class="link"><i class="bi bi-cart-fill p-2"></i>Member</a> </li>
+                <li class="leftli"><a href="/Members" class="link"><i class="bi bi-cart-fill p-2"></i>Member</a> </li>
                 <li class="leftli"><a href="/Report" class="link"><i class="bi bi-person-x p-2"></i>Report</a> </li>
                 <li class="leftli">
                     <a href="{{ route('logout') }}" class="link" onclick="event.preventDefault();
