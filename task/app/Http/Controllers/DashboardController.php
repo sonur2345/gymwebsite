@@ -5,13 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Role;
 use App\Models\Employee;
+use App\Models\Trial;
 
 class DashboardController extends Controller
 {
 
     public function Role_manage()
     {
-        return view('Dashboard.Role.RoleManage', ['role' => Role::get()]);
+        return view('Dashboard.Role.RoleManage',['role' => Role::get()],['role' => Role::get()]);
     }
     public function Role_Add(Request $request)
     {
@@ -38,11 +39,7 @@ class DashboardController extends Controller
     return redirect('/Role');
      }
 
-    // Enquiry_manage
-    public function Enquiry_manage()
-    {
-        return view('Dashboard.Enquiry.Enquiry');
-    }
+   
 
     //    Members_manage
     public function Members_manage()
@@ -50,11 +47,7 @@ class DashboardController extends Controller
         return view('Dashboard.Members.Members');
     }
 
-    //    Pakage_manage
-    public function Package_manage()
-    {
-        return view('Dashboard.Package.Package');
-    }
+    
 
     //    Report_manage
     public function Report_manage()
@@ -65,6 +58,6 @@ class DashboardController extends Controller
     // Trial_manage
     public function Trial_manage()
     {
-        return view('Dashboard.Trial.Trial');
+        return view('Dashboard.Trial.Trial',['employee' => Employee::get()],['trial' => Trial::get()]);
     }
 }

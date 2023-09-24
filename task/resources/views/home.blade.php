@@ -46,5 +46,4 @@
     
 </div>
 @include('Dashboard/Analytics/DashAnalytics1')
-<h1>hello</h1>
 @endsection

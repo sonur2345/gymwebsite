@@ -3,6 +3,8 @@ function upperCashF(a) {
     a.value = a.value.toUpperCase();
   }, 1);
 }
+
+//trial form
 function myFunctiontrial() {
   // $('#div_trial').slideDown();
   $("#enquiry_div_trial").slideToggle("slow");
@@ -18,6 +20,12 @@ function btn_trialcancel() {
 
 }
 
+ function btn_trialCONFIRM(){
+ 
+  console.log('click');
+
+ }
+ 
 // role manage 
 $("#role_manage_btn").click(function () {
   $('#staticAddRoleForm').modal('show');

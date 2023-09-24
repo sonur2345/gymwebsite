@@ -161,9 +161,11 @@ right: 0px;
 #Role_table {
     border: 1px solid black;
   
-  width: 100%;
+  /* width: 100%; */
 }
-
+table,td,td{
+    border: 1px solid black;
+}
 #submit-btn{
     height: 35px;
     width: 200px;

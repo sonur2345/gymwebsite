@@ -27,9 +27,7 @@ class AddPlanController extends Controller
        $addplan->plan_price = $request->text_planprice;
        $addplan->fk_tenure_id = $addtenure->id;
        $addplan->save();
-       return redirect('/home');
-
-
+       return redirect('/Package');
      
     }
 }
